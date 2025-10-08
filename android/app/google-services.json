@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "695848555081",
+    "project_id": "group-money-management-app",
+    "storage_bucket": "group-money-management-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695848555081:android:eb04b64085c6d8eacfa598",
+        "android_client_info": {
+          "package_name": "com.example.group_money_management_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5uNYNFEavah2Vz6NVjQdjEekBS3KAU8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
