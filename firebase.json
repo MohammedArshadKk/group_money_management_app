@@ -1,0 +1,70 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "group-money-management-app",
+          "appId": "1:695848555081:android:eb04b64085c6d8eacfa598",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "group-money-management-app",
+          "appId": "1:695848555081:ios:97211f408de3f195cfa598",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "group-money-management-app",
+          "configurations": {
+            "android": "1:695848555081:android:eb04b64085c6d8eacfa598",
+            "ios": "1:695848555081:ios:97211f408de3f195cfa598",
+            "macos": "1:695848555081:ios:97211f408de3f195cfa598",
+            "web": "1:695848555081:web:628050fb5ef5a7b8cfa598"
+          }
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "group-money-management-app",
+          "appId": "1:695848555081:ios:97211f408de3f195cfa598",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
